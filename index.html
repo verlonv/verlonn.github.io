@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"><head>
+<title>verlox</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/cte.css">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD5B41KFXM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RD5B41KFXM');
+  </script>
+</head>
+<body>
+<div id="particles-container"></div>
+<audio controls hidden loop>
+<source src="media/song.mp3" type="audio/mpeg">
+</audio>
+<div id="content-container">
+<div class="center title topbar"><img class="emoji" src="images/seperator.png"> verlon.cc <img class="emoji" src="images/seperator.png"></div>
+<span id="typing" class="center"></span>
+<div class="inline-container bottombar center">
+
+<pre style="display: inline-block;">|<div style="vertical-align: middle;" id="marquee"></div>|</pre>
+</div>
+</div>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cte.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.marquee.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    // var CTE = {};
+    CTE.callback = () => {
+      var aud = document.getElementsByTagName("audio")[0];
+      aud.volume = .3;
+      aud.play();
+
+      var typed = new Typed("#typing", {
+        strings: ["destroying kids dreams", "programmer", "lithium co-leader", "reaping rewards", "professional kpop destroyer", "discord terminated", "vdsfsdsdf - discord"],
+        typeSpeed: 30,
+        backspeed: 20,
+        showCursor: false
+      });
+
+      var lines = ["Lithium hacks", "lithium owns you", ":-)"];
+      for (var x = 0;x < lines.length;x++)
+        $("#marquee").append(`${lines[x]}${(x < lines.length - 1? ' <img class="emoji" src="/assets/images/seperator.png"> ' : '')}`);
+
+      $("#marquee").marquee({
+        duration: 7500,
+        gap: 100,
+        delayBeforeStart: 1000,
+        direction: 'left',
+      });
+    }
+    // CTE.callback();
+  </script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7e8a85fc5c96d0b5'};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/invisible.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
